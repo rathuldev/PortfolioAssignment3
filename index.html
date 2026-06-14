@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+
+<body>
+    <header class="headerCont">
+        <div class="headerSection">
+            <h1>Rathul</h1>
+            <div>
+                <nav>
+                    <ul class="navlinkUl">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="innerSection pf-sml-descflx">
+                <div>
+                    <h2>Hi</h2>
+                    <p>I'm Rathul</p>
+                    <button type="button">Contact</button>
+                </div>
+            </div>  
+            <div class="innerSection pf-about" id="about">
+                <article>
+                    <header>
+                        <h2>About</h2>
+                    </header>
+                    <img src="./images/profilepic.jpg" alt="profile pic" title="profile" />
+                    <p>Front End develeper with 5 years of experience working with Javascript, CSS, HTML to deliver
+                        exceptional
+                        customer experiences.</p>
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="innerSection pf-project" id="project">
+                <article>
+                    <header>
+                        <h2>Projects</h2>
+                    </header>
+                    <h3>Event Management</h3>
+                    <p>Eventstoday is an online event management project, used to manage all activities related to an
+                        event.
+                    </p>
+                    <p>Front End: PHP</p>
+                    <p>Back End: MYSQL</p>
+                    <h3>BulkyBookry Management</h3>
+                    <p>BulkyBook is an e-commercial website used to buy books online. You can order bulk amount book
+                        using
+                        this application and also currently working on this project to improve my skills.</p>
+                    <p>Front End: PHP</p>
+                    <p>Back End: MYSQL</p>
+                </article>
+            </div>
+            <div class="innerSection pf-contact" id="contact">
+                <article>
+                    <header>
+                        <h2>Contact Us</h2>
+                    </header>
+                    <form>
+                        <fieldset>
+                            <legend>Contact Form</legend>
+                            <div>
+                                <label for="txtName">Name : </label>
+                                <input type="text" name="txtName" id="txtName" placeholder="Enter Your Name" required />
+                            </div>
+                            <br />
+                            <div>
+                                <label for="txtEmail">Email : </label>
+                                <input type="email" name="txtEmail" id="txtEmail" placeholder="Enter Your Email"
+                                    required />
+                            </div>
+                            <br />
+                            <div>
+                                <label for="txtMessage">Message : </label>
+                                <textarea id="txtMessage" name="txtMessage" rows="4"></textarea>
+                            </div>
+                            <br />
+                            <button type="submit">Submit</button>
+                        </fieldset>
+                    </form>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Rathul. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
