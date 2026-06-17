@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,43 +6,271 @@ body{
     background-color: #fff;
 }
 
-.headerCont{
+.headerCont {
     border-bottom: 1px solid #eee;
 }
 
-.headerSection{
+.headerSection {
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-.headerSection{
+.headerSection {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-.navlinkUl{
+.navlinkUl {
     display: flex;
     gap: 25px;
     list-style: none;
     padding: 0;
 }
 
-.navlinkUl a{
+.navlinkUl a {
+    color: #2a66f0;
+    font-size: 18px;
+    font-weight: 500;
     text-decoration: none;
-    color: #000;
 }
 
-.pf-sml-descflx{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.navlinkUl a:hover {
+    color: #102c65;
+}
+
+.topBg {
     background-image: url('/Assignment3/images/developerbg.png');
     background-size: 100% 100%;
     height: 793px;
 }
 
-.pf-sml-descflx > div{width:50%;}
+.pf-sml-descflx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 18%;
+    height: 100%;
+}
 
+.pf-sml-descflx>div {
+    width: 50%;
+}
+
+.topBannerHead {
+    font-size: 24px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    color: #102c65;
+}
+
+.topBannerContnet {
+    margin: 5px 0 10px 0;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.btnContact {
+    margin: 5px 0 10px 5px;
+    background-color: #1d4cbb;
+    padding: 10px 40px;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #1d4cbb;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btnContact:hover {
+    background-color: #102c65;
+}
+
+.innerSection {
+    float: left;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.pf-aboutImg {
+    width: 400px;
+    height: 380px;
+}
+
+.pf-subHead {
+    font-size: 4rem;
+    font-weight: 500;
+    text-align: center;
+    color: #102b63;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 5% auto;
+    border-bottom: 2px solid #102b63;
+    padding-bottom: 10px;
+}
+
+.pf-innerGridContainer {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: 100px 400px;
+    max-width: 1500px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.pf-innerGridHeader {
+    grid-column: span 2;
+}
+
+.skillGridUl {
+    display: grid;
+    grid-template-columns: 10% 10% 10%;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
+
+.skillGridUl li {
+    border: 1px solid #b5cff8;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.subHead2 {
+    font-size: 1.4rem;
+    line-height: 30px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.projectCard {
+    width: 455px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #7493d2;
+}
+
+.projectCard img {
+    width: 100%
+}
+
+.formContainer {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+fieldset {
+    padding: 5%;
+    border-radius: 5px;
+    border-color: #7493d2;
+    box-shadow: 0px 0px 10px 0px #7493d2;
+    border-width: 2px;
+}
+
+fieldset>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+fieldset>div>label {
+    width: 20%;
+}
+
+fieldset>div>input,
+fieldset>div>textarea {
+    width: 80%;
+    padding: 8px;
+    border-radius: 4px;
+    border-width: 0.1px;
+    border-color: #a7a3a3;
+
+}
+
+legend {
+    padding: 0 1%;
+    color: #102b63;
+    font-size: 1.25rem;
+}
+
+.btnSubmit {
+    margin: 5px 0 10px 5px;
+    background-color: #1d4cbb;
+    padding: 10px 40px;
+    color: #fff;
+    border-radius: 6px;
+    border: 1px solid #1d4cbb;
+    font-size: 18px;
+}
+
+.btnSubmit:hover {
+    background-color: #102c65;
+}
+
+.txtcenter {
+    justify-content: center;
+}
+
+.footer {
+    margin-top: 5%;
+    padding: 2.5% 0;
+    text-align: center;
+    background-color: #102c65;
+    color: #fff;
+    float: left;
+    width: 100%;
+}
+
+.animation-container {
+    overflow: hidden;
+}
+
+.slide-textInRight {
+    animation: slideInRight 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+.slide-up-element {
+    animation: slideFromBottom 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
